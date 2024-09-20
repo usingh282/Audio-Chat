@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Audio Chat Application</title>
+</head>
+<body>
+    <div id="login-container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter your username" />
+        <button id="login-button">Login</button>
+    </div>
+
+    <div id="chat-container" style="display: none;">
+        <div id="profile-settings">
+            <div>
+                <strong>Profile Settings</strong>
+                <button id="edit-profile">Edit</button>
+            </div>
+        </div>
+        <div id="chat-box">
+            <div id="user-name" class="user-name">User: <span id="current-user">Alice</span></div>
+            <div id="mic-status" class="mic-status muted">Mic: OFF</div>
+        </div>
+        <div id="controls">
+            <button id="prev-user">&lt; Previous</button>
+            <button id="next-user">Next &gt;</button>
+        </div>
+    </div>
+
+    <div id="profile-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <h2>Edit Profile</h2>
+            <label for="profile-name">Name:</label>
+            <input type="text" id="profile-name" placeholder="Enter your name" />
+            <label for="profile-email">Email:</label>
+            <input type="email" id="profile-email" placeholder="Enter your email" />
+            <label for="profile-age">Age:</label>
+            <input type="number" id="profile-age" placeholder="Enter your age" />
+            <label for="profile-location">Location:</label>
+            <input type="text" id="profile-location" placeholder="Enter your location" />
+            <button id="save-profile">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
