@@ -94,9 +94,20 @@ function startRecording() {
         })
         .catch(error => {
             console.error("Error accessing microphone: ", error);
+            alert("Could not access the microphone. Please check your permissions.");
         });
 }
 
 function stopRecording() {
-    mediaRecorder.stop();
+    if (mediaRecorder) {
+        mediaRecorder.stop();
+    }
+}
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+    const modal = document.getElementById('profile-modal');
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
