@@ -1,4 +1,4 @@
-# Audio Chat Application
+# Audio Chat Application [CHATLO]
 
 ## Overview
 This is a basic audio chat application developed by **Udaypro49**. The application allows users to engage in audio conversations in a user-friendly interface.
