@@ -23,8 +23,4 @@ Make sure you have the following installed:
 - A modern web browser
 - [Optional: Any other prerequisites like Node.js, if applicable]
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/audio-chat-app.git
-   cd audio-chat-app
+
